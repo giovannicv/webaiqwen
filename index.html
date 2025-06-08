@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LCB - Productora Audiovisual</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navegación -->
+    <header class="navbar">
+        <div class="logo">LCB</div>
+        <nav class="nav-links">
+            <a href="#inicio">Inicio</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#portafolio">Portafolio</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+        <button class="hamburger">&#9776;</button>
+    </header>
+
+    <!-- Sección Inicio -->
+    <section id="inicio" class="hero">
+        <h1>LCB Producciones</h1>
+        <p>Creatividad que trasciende. Contamos historias visuales impactantes.</p>
+        <a href="#contacto" class="btn">Contáctanos</a>
+    </section>
+
+    <!-- Sección Nosotros -->
+    <section id="nosotros" class="about">
+        <h2>Sobre Nosotros</h2>
+        <p>LCB es una productora audiovisual apasionada por la narrativa visual. Con años de experiencia en producción de video, edición profesional, fotografía y diseño multimedia, creamos contenido único que conecta emocionalmente con tu audiencia.</p>
+    </section>
+
+    <!-- Sección Servicios -->
+    <section id="servicios" class="services">
+        <h2>Nuestros Servicios</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Fotografía Profesional</h3>
+                <p>Capturamos momentos únicos con luz natural y técnica avanzada.</p>
+            </div>
+            <div class="card">
+                <h3>Videografía & Edición</h3>
+                <p>Producción completa de videos corporativos, promocionales y eventos.</p>
+            </div>
+            <div class="card">
+                <h3>Animación & Motion Graphics</h3>
+                <p>Creación de gráficos animados, introductivos y explicativos.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Portafolio -->
+    <section id="portafolio" class="portfolio">
+        <h2>Portafolio</h2>
+        <div class="gallery">
+            <img src="https://via.placeholder.com/400x250"  alt="Video 1">
+            <img src="https://via.placeholder.com/400x250"  alt="Video 2">
+            <img src="https://via.placeholder.com/400x250"  alt="Video 3">
+            <img src="https://via.placeholder.com/400x250"  alt="Video 4">
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="contact">
+        <h2>Contáctanos</h2>
+        <form>
+            <input type="text" placeholder="Tu nombre" required>
+            <input type="email" placeholder="Tu correo electrónico" required>
+            <textarea placeholder="Tu mensaje..." required></textarea>
+            <button type="submit" class="btn">Enviar Mensaje</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 LCB Producciones. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Script para menú responsive -->
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+
+</body>
+</html>
